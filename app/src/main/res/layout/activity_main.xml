@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="30sp"
+        android:id="@+id/mainText"
+        android:textColor="#0066ff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+
+         <LinearLayout
+             android:id="@+id/layout1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_centerHorizontal="true">
+
+             <Button
+                 android:id="@+id/btn_zoom_in"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:text="Zoom In"
+                 android:textColor="#0066ff"
+                 android:textStyle="bold"
+                 android:onClick="onClick"/>
+
+             <Button
+                 android:id="@+id/btn_zoom_out"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:text="Zoom out"
+                 android:textColor="#0066ff"
+                 android:textStyle="bold"
+                 android:onClick="onClick"
+                 />
+
+             <Button
+                 android:id="@+id/btn_blink"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="5dp"
+                 android:text="Blink"
+                 android:textColor="#0066ff"
+                 android:textStyle="bold"
+                 android:onClick="onClick"
+                 />
+
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/layout1"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/btn_fade_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Fade out"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/btn_fade_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Fade In"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/btn_cross_fade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Cross Fade"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/layout2"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/btn_rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Rotate"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/btn_move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Move"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/btn_bounce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Bounce"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/layout3">
+
+            <Button
+                android:id="@+id/btn_Slide_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Slide Up"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/btn_slide_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Slide Down"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout4"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/btn_sequential"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Sequential Animation"
+                android:padding="10dp"
+                android:textColor="#0066ff"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
